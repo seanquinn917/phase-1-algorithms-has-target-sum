@@ -1,6 +1,23 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  //add each num in array to see is any combination equals target
+ //start at 0 and work through before optimizing
+ //look through array
+ for(i=0; i<=array.length; i++){
+//continue through rest of array
+  for(j = i +1; j <=array.length; j++){
+  // add numbers to see if they equal target
+    if(array[i] + array[j] === target){
+      //return the two numbers 
+      return true} 
+      }
+    } 
+    return false
 }
+  
+  
+
+
 
 /* 
   Write the Big O time complexity of your function here
